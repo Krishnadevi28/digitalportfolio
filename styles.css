@@ -1,0 +1,165 @@
+﻿/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-image: url('profile-background.jpg'); /* Replace with your profile background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 36px;
+    color: #9F2B68;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Boxes section styles */
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+    animation: fadeIn 1s ease;
+    transition: transform 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.box a{
+    text-decoration: none;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
+/* Ratings styles */
+.ratings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating {
+    margin-top: 20px;
+}
+
+.stars {
+    font-size: 24px;
+    color: gold;
+    margin-top: 5px;
+}
+
+        .download-button {
+            background-color: #547;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Keyframes animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
